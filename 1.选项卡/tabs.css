@@ -1,0 +1,64 @@
+/*css reset*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*float :clear*/
+
+.clear {
+    clear: both;
+}
+
+#tabs {
+    width: 480px;
+    height: 132px;
+    background-repeat: repeat-y;
+}
+
+#nav {
+    height: 60px;
+    background-image: url(images/nav_bg.gif);
+}
+
+#nav ul li {
+    float: left;
+    width: auto;
+    margin: 0 20px;
+    display: inline-block;
+}
+
+#nav ul li a {
+    float: right;
+    display: inline-block;
+}
+
+#content {
+    border: 1px solid blue;
+}
+
+#content ul {
+    margin-left: 40px;
+}
+
+#content ul li {
+    list-style: none;
+}
+
+#content ul li h2 {
+    height: 30px;
+    background-image: url(images/line.gif);
+    background-repeat: repeat-x;
+    background-position: center;
+}
+
+.imgs {
+    float: left;
+    margin: 20px 20px;
+}
+
+h2 {
+    font-size: 12px;
+}
