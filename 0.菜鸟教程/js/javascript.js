@@ -90,8 +90,6 @@ function time1() {
 }
 
 
-
-
 function time2() {
     document.getElementById("imgechage").src = "img/pic_bulbon.gif";
 }
