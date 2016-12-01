@@ -79,9 +79,48 @@ function maxunm(num1) {
 
 //函数调用方法
 // 作为函数调用
+function myFunction(a, b) {
+    return a * b;
+}
+myFunction(10, 2); // myFunction(10, 2) 返回 20
+
+function myFunction(a, b) {
+    return a * b;
+}
+window.myFunction(10, 2); // window.myFunction(10, 2) 返回 20
 // 作为全局对象调用
+function myFunction() {
+    return this;
+}
+myFunction(); // 返回 window 对象
 // 作为方法调用
+var myObject = {
+    firstName: "John",
+    lastName: "Doe",
+    fullName: function() {
+        return this.firstName + " " + this.lastName;
+    }
+}
+myObject.fullName(); // 返回 "John Doe"
+var myObject = {
+    firstName: "John",
+    lastName: "Doe",
+    fullName: function() {
+        return this;
+    }
+}
+myObject.fullName(); // 返回 [object Object] (所有者对象)
 // 使用构造函数调用
+// 构造函数:
+function myFunction(arg1, arg2) {
+    this.firstName = arg1;
+    this.lastName = arg2;
+}
+
+// This	creates a new object
+var x = new myFunction("John", "Doe");
+x.firstName; // 返回 "John"
+
 //使用函数方法调用函数
 function myFunction(a, b) {
     return a * b;
@@ -107,5 +146,36 @@ windows.onload = function() {
                 all1[i].checked = true;
             }
         }
+    }
+}
+
+var add = (function() {
+    var counter = 0;
+    return function() { return counter += 1; }
+})();
+
+add();
+add();
+add();
+
+// 计数器为 3
+
+function time1() {
+    document.write(Date());
+}
+
+
+
+
+function time2() {
+    document.getElementById("imgechage").src = "img/pic_bulbon.gif";
+}
+
+function time3() {
+    var img13 = document.getElementById("p1").style
+    if (img13.visibility == "hidden") {
+        img13.visibility = "visible";
+    } else {
+        img13.visibility = "hidden";
     }
 }
