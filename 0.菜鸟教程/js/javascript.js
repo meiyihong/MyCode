@@ -79,8 +79,7 @@ function maxunm(num1) {
 
 //函数调用方法
 // 作为函数调用
-<<
-<< << < HEAD
+
 
 function myFunction(a, b) {
     return a * b;
@@ -124,13 +123,11 @@ function myFunction(arg1, arg2) {
 var x = new myFunction("John", "Doe");
 x.firstName; // 返回 "John"
 
-===
-=== =
+
 // 作为全局对象调用
 // 作为方法调用
 // 使用构造函数调用
->>>
->>> > b4e1989df0cb12441b9e3716901ccc72410b46a0
+
 //使用函数方法调用函数
 function myFunction(a, b) {
     return a * b;
@@ -148,16 +145,15 @@ windows.onload = function() {
     var all1 = listall.getElementsByTagName("input");
     all1[0].onclick = function() {
 
-            for (var i = 1; i < all1.length; i++) {
-                if (all1[0].onclick = "all1[0].checked=true") {
-                    all1[i].checked = false;
-                } else {
-                    all1[0].checked = true;
-                    all1[i].checked = true;
-                }
+        for (var i = 1; i < all1.length; i++) {
+            if (all1[0].onclick = "all1[0].checked=true") {
+                all1[i].checked = false;
+            } else {
+                all1[0].checked = true;
+                all1[i].checked = true;
             }
-        } <<
-        << << < HEAD
+        }
+    }
 }
 
 var add = (function() {
