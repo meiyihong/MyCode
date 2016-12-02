@@ -57,9 +57,6 @@ function emails() {
 
 }
 
-
-
-
 //取得数组的最大值
 var num1 = [1, 3, 5, 6, 3, 4, 5, 7, 8];
 
@@ -77,62 +74,9 @@ function maxunm(num1) {
     xk.innerHTML = yt;
 }
 
-//函数调用方法
-// 作为函数调用
-function myFunction(a, b) {
-    return a * b;
-}
-myFunction(10, 2); // myFunction(10, 2) 返回 20
-
-function myFunction(a, b) {
-    return a * b;
-}
-window.myFunction(10, 2); // window.myFunction(10, 2) 返回 20
-// 作为全局对象调用
-function myFunction() {
-    return this;
-}
-myFunction(); // 返回 window 对象
-// 作为方法调用
-var myObject = {
-    firstName: "John",
-    lastName: "Doe",
-    fullName: function() {
-        return this.firstName + " " + this.lastName;
-    }
-}
-myObject.fullName(); // 返回 "John Doe"
-var myObject = {
-    firstName: "John",
-    lastName: "Doe",
-    fullName: function() {
-        return this;
-    }
-}
-myObject.fullName(); // 返回 [object Object] (所有者对象)
-// 使用构造函数调用
-// 构造函数:
-function myFunction(arg1, arg2) {
-    this.firstName = arg1;
-    this.lastName = arg2;
-}
-
-// This	creates a new object
-var x = new myFunction("John", "Doe");
-x.firstName; // 返回 "John"
-
-//使用函数方法调用函数
-function myFunction(a, b) {
-    return a * b;
-window.onload = function() {
-            }
-        }
-    }
-}
-
-var add = (function() {
+var add = (function () {
     var counter = 0;
-    return function() { return counter += 1; }
+    return function () { return counter += 1; }
 })();
 
 add();
