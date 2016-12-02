@@ -124,7 +124,7 @@ x.firstName; // 返回 "John"
 //使用函数方法调用函数
 function myFunction(a, b) {
     return a * b;
-@@ -108,4 +147,35 @@ windows.onload = function() {
+window.onload = function() {
             }
         }
     }
@@ -159,10 +159,4 @@ function time3() {
     } else {
         img13.visibility = "hidden";
     }
-}
-
-=======
->>>>>>> parent of ee8bd16... update
-=======
->>>>>>> parent of ee8bd16... update
 }
