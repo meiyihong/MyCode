@@ -80,6 +80,7 @@ function maxunm(num1) {
 //函数调用方法
 // 作为函数调用
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 function myFunction(a, b) {
@@ -114,6 +115,11 @@ x.firstName; // 返回 "John"
 
 =======
 >>>>>>> parent of ee8bd16... update
+=======
+// 作为全局对象调用
+// 作为方法调用
+// 使用构造函数调用
+>>>>>>> parent of ee8bd16... update
 //使用函数方法调用函数
 function myFunction(a, b) {
     return a * b;
@@ -140,6 +146,7 @@ windows.onload = function() {
             }
         }
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 }
 
@@ -173,6 +180,8 @@ function time3() {
         img13.visibility = "hidden";
     }
 
+=======
+>>>>>>> parent of ee8bd16... update
 =======
 >>>>>>> parent of ee8bd16... update
 }

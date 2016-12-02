@@ -10,12 +10,16 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .clear:after {
     content: "";
     display: block;
 =======
 .clear {
 >>>>>>> b4e1989df0cb12441b9e3716901ccc72410b46a0
+=======
+.clear {
+>>>>>>> parent of ee8bd16... update
 =======
 .clear {
 >>>>>>> parent of ee8bd16... update
@@ -28,6 +32,7 @@
     background-repeat: repeat-y;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 body {
@@ -47,13 +52,21 @@ body {
 #nav {
     height: 60px;
     background-image: url(images/nav_bg.gif);
+=======
+#nav {
+    height: 60px;
+    background-image: url(images/nav_bg.gif);
+>>>>>>> parent of ee8bd16... update
 }
 
 #nav ul li {
     float: left;
+<<<<<<< HEAD
 >>>>>>> b4e1989df0cb12441b9e3716901ccc72410b46a0
 =======
     float: left;
+>>>>>>> parent of ee8bd16... update
+=======
 >>>>>>> parent of ee8bd16... update
     width: auto;
     margin: 0 20px;
@@ -63,6 +76,10 @@ body {
 #nav ul li a {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    float: right;
+>>>>>>> parent of ee8bd16... update
 =======
     float: right;
 >>>>>>> parent of ee8bd16... update
@@ -72,6 +89,7 @@ body {
 #content {
     border: 1px solid blue;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     float: right;
     display: inline-block;
@@ -79,6 +97,8 @@ body {
 
 #content {
     border: 1px solid blue;
+=======
+>>>>>>> parent of ee8bd16... update
 =======
 >>>>>>> parent of ee8bd16... update
 }
@@ -106,7 +126,10 @@ body {
 h2 {
     font-size: 12px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> b4e1989df0cb12441b9e3716901ccc72410b46a0
+=======
+>>>>>>> parent of ee8bd16... update
 =======
 >>>>>>> parent of ee8bd16... update
 }
