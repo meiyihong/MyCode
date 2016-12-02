@@ -1,4 +1,4 @@
-var hello = 'heheda'
+﻿var hello = 'heheda'
 
 function doo() {
     alert(hello);
@@ -79,10 +79,6 @@ function maxunm(num1) {
 
 //函数调用方法
 // 作为函数调用
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
 function myFunction(a, b) {
     return a * b;
 }
@@ -92,12 +88,29 @@ function myFunction(a, b) {
     return a * b;
 }
 window.myFunction(10, 2); // window.myFunction(10, 2) 返回 20
-=======
->>>>>>> parent of ee8bd16... update
 // 作为全局对象调用
+function myFunction() {
+    return this;
+}
+myFunction(); // 返回 window 对象
 // 作为方法调用
+var myObject = {
+    firstName: "John",
+    lastName: "Doe",
+    fullName: function() {
+        return this.firstName + " " + this.lastName;
+    }
+}
+myObject.fullName(); // 返回 "John Doe"
+var myObject = {
+    firstName: "John",
+    lastName: "Doe",
+    fullName: function() {
+        return this;
+    }
+}
+myObject.fullName(); // 返回 [object Object] (所有者对象)
 // 使用构造函数调用
-<<<<<<< HEAD
 // 构造函数:
 function myFunction(arg1, arg2) {
     this.firstName = arg1;
@@ -108,46 +121,13 @@ function myFunction(arg1, arg2) {
 var x = new myFunction("John", "Doe");
 x.firstName; // 返回 "John"
 
-
-// 作为全局对象调用
-// 作为方法调用
-// 使用构造函数调用
-
-=======
->>>>>>> parent of ee8bd16... update
-=======
-// 作为全局对象调用
-// 作为方法调用
-// 使用构造函数调用
->>>>>>> parent of ee8bd16... update
 //使用函数方法调用函数
 function myFunction(a, b) {
     return a * b;
-}
-//apply方法调用函数
-myArry = [10, 2];
-myFunction.apply(myobject, myArry);
-//call方法调用函数
-myFunction, call(myobject, 10, 2);
-
-//全选
-windows.onload = function() {
-
-    var listall = document.getElementById("list1");
-    var all1 = listall.getElementsByTagName("input");
-    all1[0].onclick = function() {
-
-        for (var i = 1; i < all1.length; i++) {
-            if (all1[0].onclick = "all1[0].checked=true") {
-                all1[i].checked = false;
-            } else {
-                all1[0].checked = true;
-                all1[i].checked = true;
+@@ -108,4 +147,35 @@ windows.onload = function() {
             }
         }
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
 
 var add = (function() {
@@ -179,6 +159,7 @@ function time3() {
     } else {
         img13.visibility = "hidden";
     }
+}
 
 =======
 >>>>>>> parent of ee8bd16... update
