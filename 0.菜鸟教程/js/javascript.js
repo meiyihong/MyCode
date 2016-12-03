@@ -74,9 +74,9 @@ function maxunm(num1) {
     xk.innerHTML = yt;
 }
 
-var add = (function () {
+var add = (function() {
     var counter = 0;
-    return function () { return counter += 1; }
+    return function() { return counter += 1; }
 })();
 
 add();
@@ -90,6 +90,7 @@ function time1() {
 }
 
 
+//隐藏显示图片
 function time2() {
     document.getElementById("imgechage").src = "img/pic_bulbon.gif";
 }
