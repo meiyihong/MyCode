@@ -1,0 +1,13 @@
+.menu1 {
+    height: 30px;
+    width: 100px;
+    border: 1px solid #000;
+    list-style: none;
+}
+
+.menu2 {
+    display: none;
+    width: 100px;
+    height: 80px;
+    border: 1px solid #000;
+}
