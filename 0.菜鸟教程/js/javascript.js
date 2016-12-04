@@ -103,3 +103,80 @@ function time3() {
         img13.visibility = "hidden";
     }
 }
+
+
+//创建元素借点
+function pp() {
+    var x = document.getElementById("insert"),
+        y = document.createElement("br"),
+        z = document.createElement("p"),
+        w = document.createTextNode("新的文本点");
+    z.appendChild(w);
+    x.appendChild(y);
+    x.appendChild(z);
+    y.id = "hehe";
+}
+//删除节点
+function det() {
+    var x = document.getElementById("insert"),
+        y = document.getElementById("hehe");
+    x.removeChild(y);
+}
+
+//计数器
+function count() {
+    var i = 0;
+
+    function counter() {
+        i++;
+        alert(i);
+    }
+    return counter;
+}
+
+//闭包
+var name = "The Window";
+var object = {
+    name: "My Object",
+    getNameFunc: function() {
+        return function() {
+            return this.name;
+        };
+    }
+};
+alert(object.getNameFunc()());
+//闭包
+var name = "The Window";
+var object = {
+    name: "My Object",
+    getNameFunc: function() {
+        var that = this;
+        return function() {
+            return that.name;
+        };
+    }
+};
+alert(object.getNameFunc()());
+
+function f1() {
+    var n = 999;
+    console.log(n);
+    nAdd = function() { n += 1 }
+    console.log(n);
+
+    function f2() {
+        alert(n);
+    }
+    return f2;
+}
+var result = f1();
+
+result(); // 999
+nAdd();
+result(); // 1000
+nAdd();
+nAdd();
+nAdd();
+result();
+result();
+result();

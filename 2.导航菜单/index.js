@@ -19,19 +19,18 @@ window.onload = function() {
 function demo() {
     var x = document.getElementsByClassName("menu1"),
         y = document.getElementsByClassName("menu2");
-    for (var i = 0; i < 5; i++) {
-
+    for (var i = 0; i < x.length; i++) {
         x[i].onmouseover = (function(i) {
             return function() {
-                console.log(i + "neibi");
                 y[i].style.display = "block";
+                console.log("show" + i + y[i].className);
             }
         })(i);
 
         x[i].onmouseout = (function(i) {
             return function() {
-                console.log(i + "neibi");
                 y[i].style.display = "none";
+                console.log("hide" + i + y[i].className);
             }
         })(i);
     }
@@ -39,30 +38,22 @@ function demo() {
 //DOM事件设置菜单改写
 function demo1() {
     var x = document.getElementsByClassName("menu1"),
-        y = document.getElementsByClassName("menu2");
-    for (var i = 0; i < 5; i++) {
-
-        x[i].onmouseover = function(i) {
-            df(i)
-        };
-
-        function df(i) {
+        y = document.getElementById("menu20").children;
+    console.log(y.length);
+    for (var i = 0; i < x.length; i++) {
+        x[i].onmouseover = (function(i) {
             return function() {
-                console.log(i + "neibix");
-                y[i].style.display = "block";
+                y[i].className = "menu3";
+                console.log("show" + i + y[i].className);
             }
-        };
+        })(i);
 
-        x[i].onmouseover = function(i) {
-            ddf(i)
-        };
-
-        function ddf(i) {
+        x[i].onmouseout = (function(i) {
             return function() {
-                console.log(i + "neibiy");
-                y[i].style.display = "none";
+                y[i].className = "menu2";
+                console.log("hide" + i + y[i].className);
             }
-        };
+        })(i);
     }
 }
 
@@ -77,7 +68,7 @@ function demo2() {
         function show(i) {
             console.log(i + "neibix");
             return function() {
-                y[i].style.display = "block";
+                y[i].class = "block";
             }
         }(i);
 
